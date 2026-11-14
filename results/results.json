@@ -1,0 +1,210 @@
+{
+  "data": {
+    "dialogues": 1030,
+    "participants": 2060,
+    "annotated_dialogues": 393,
+    "utterances": 11919,
+    "deal_rate": 0.976,
+    "test_dialogues": 100
+  },
+  "detector_validation": {
+    "tuning_utterances": 4099,
+    "held_out_utterances": 481,
+    "held_out": [
+      {
+        "behaviour": "asksPreferences",
+        "precision": 0.404,
+        "recall": 0.568,
+        "f1": 0.472,
+        "support": 37
+      },
+      {
+        "behaviour": "sharesNeeds",
+        "precision": 0.538,
+        "recall": 0.446,
+        "f1": 0.488,
+        "support": 112
+      },
+      {
+        "behaviour": "showsEmpathy",
+        "precision": 0.295,
+        "recall": 0.382,
+        "f1": 0.333,
+        "support": 34
+      },
+      {
+        "behaviour": "appealsToFairness",
+        "precision": 0.581,
+        "recall": 0.4,
+        "f1": 0.474,
+        "support": 45
+      },
+      {
+        "behaviour": "buildsRapport",
+        "precision": 0.578,
+        "recall": 0.481,
+        "f1": 0.525,
+        "support": 108
+      },
+      {
+        "behaviour": "proposesTogether",
+        "precision": 0.381,
+        "recall": 0.485,
+        "f1": 0.427,
+        "support": 66
+      }
+    ],
+    "tuning_f1": {
+      "asksPreferences": 0.598,
+      "sharesNeeds": 0.565,
+      "showsEmpathy": 0.331,
+      "appealsToFairness": 0.571,
+      "buildsRapport": 0.516,
+      "proposesTogether": 0.434
+    },
+    "held_out_mean_f1": 0.453
+  },
+  "strategy_insights": [
+    {
+      "strategy": "elicit-pref",
+      "used_by": 295,
+      "not_used_by": 491,
+      "liked_by_partner_used": 4.15,
+      "liked_by_partner_not": 4.03,
+      "liked_p": 0.1502,
+      "points_used": 19,
+      "points_not": 18.53,
+      "points_p": 0.0608
+    },
+    {
+      "strategy": "showing-empathy",
+      "used_by": 195,
+      "not_used_by": 591,
+      "liked_by_partner_used": 4.1,
+      "liked_by_partner_not": 4.07,
+      "liked_p": 0.7309,
+      "points_used": 18.5,
+      "points_not": 18.78,
+      "points_p": 0.3209
+    },
+    {
+      "strategy": "small-talk",
+      "used_by": 541,
+      "not_used_by": 245,
+      "liked_by_partner_used": 4.21,
+      "liked_by_partner_not": 3.79,
+      "liked_p": 0.0002,
+      "points_used": 18.76,
+      "points_not": 18.6,
+      "points_p": 0.5651
+    },
+    {
+      "strategy": "promote-coordination",
+      "used_by": 390,
+      "not_used_by": 396,
+      "liked_by_partner_used": 4.09,
+      "liked_by_partner_not": 4.07,
+      "liked_p": 0.8,
+      "points_used": 18.86,
+      "points_not": 18.56,
+      "points_p": 0.222
+    },
+    {
+      "strategy": "vouch-fair",
+      "used_by": 313,
+      "not_used_by": 473,
+      "liked_by_partner_used": 3.96,
+      "liked_by_partner_not": 4.16,
+      "liked_p": 0.0186,
+      "points_used": 18.5,
+      "points_not": 18.85,
+      "points_p": 0.1656
+    },
+    {
+      "strategy": "self-need",
+      "used_by": 582,
+      "not_used_by": 204,
+      "liked_by_partner_used": 4.06,
+      "liked_by_partner_not": 4.12,
+      "liked_p": 0.5741,
+      "points_used": 18.78,
+      "points_not": 18.51,
+      "points_p": 0.3385
+    },
+    {
+      "strategy": "other-need",
+      "used_by": 269,
+      "not_used_by": 517,
+      "liked_by_partner_used": 3.99,
+      "liked_by_partner_not": 4.12,
+      "liked_p": 0.1236,
+      "points_used": 18.79,
+      "points_not": 18.67,
+      "points_p": 0.6331
+    },
+    {
+      "strategy": "no-need",
+      "used_by": 169,
+      "not_used_by": 617,
+      "liked_by_partner_used": 4.29,
+      "liked_by_partner_not": 4.02,
+      "liked_p": 0.0066,
+      "points_used": 18.24,
+      "points_not": 18.84,
+      "points_p": 0.0434
+    },
+    {
+      "strategy": "uv-part",
+      "used_by": 106,
+      "not_used_by": 680,
+      "liked_by_partner_used": 3.65,
+      "liked_by_partner_not": 4.14,
+      "liked_p": 0.0002,
+      "points_used": 18.76,
+      "points_not": 18.7,
+      "points_p": 0.8624
+    }
+  ],
+  "never_suggested": [
+    "appealsToFairness"
+  ],
+  "coaching_score": {
+    "train_participants": 1860,
+    "test_participants": 200,
+    "test_spearman": {
+      "liked_by_partner": 0.158,
+      "points": -0.027,
+      "satisfaction": 0.125
+    },
+    "test_p": {
+      "liked_by_partner": 0.026,
+      "points": 0.7069,
+      "satisfaction": 0.075
+    },
+    "weights_liked_by_partner": {
+      "asksPreferences": 0.54,
+      "sharesNeeds": -0.77,
+      "showsEmpathy": 0.24,
+      "appealsToFairness": 0.06,
+      "buildsRapport": 0.91,
+      "proposesTogether": 0.04,
+      "talkShare": 0.07
+    },
+    "weights_points": {
+      "asksPreferences": 1.34,
+      "sharesNeeds": -0.64,
+      "showsEmpathy": -0.26,
+      "appealsToFairness": 0.68,
+      "buildsRapport": 1.12,
+      "proposesTogether": -0.46,
+      "talkShare": 1.05
+    }
+  },
+  "score_check": {
+    "top_fifth_liked": 4.55,
+    "bottom_fifth_liked": 4.05,
+    "top_fifth_points": 18.33,
+    "bottom_fifth_points": 19.58
+  },
+  "scenarios": 10
+}
